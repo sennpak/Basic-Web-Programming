@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Hello World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="#">
+                    <img src="images/web-development.png" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="banner">
+            <img src="images/banner1.jpg" class="img-fluid rounded-3">
+        </div>
+        <div id="highlight" class="row mt-3">
+            <div class="col">
+                <img src="images/thor.jpg" class="img-fluid rounded-3">
+            </div>
+            <div class="col">
+                <img src="images/wick.jpg" class="img-fluid rounded-3">
+            </div>
+            <div class="col">
+                <img src="images/ironman.jpg" class="img-fluid rounded-3">
+            </div>
+        </div>
+        <div id="subtitle-section" class="d-flex flex-lg-row flex-column">
+            <div class="subtitle-img">
+                <img src="images/banner2.jpg" alt="Subtitle Image" />
+            </div>
+            <div class="subtitle-text">
+                <h2>Subtitle Here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="client" class="container">
+            <h2>Our Client</h2>
+            <div class="client-logos row flex-wrap align-items-center justify-content-center">
+                <div class="col-4 col-lg-2 mb-3">
+                    <img src="images/0.jpg" alt="Client 1" class="img-fluid">
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <img src="images/1.jpg" alt="Client 2" class="img-fluid">
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <img src="images/2.jpg" alt="Client 3" class="img-fluid">
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <img src="images/3.jpg" alt="Client 4" class="img-fluid">
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <img src="images/4.jpg" alt="Client 5" class="img-fluid">
+                </div>
+                <div class="col-4 col-lg-2 mb-3">
+                    <img src="images/5.jpg" alt="Client 6" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="testimonials" class="text-center my-5">
+            <h2>Testimonials</h2>
+            <!-- row memberikan flex-row otomatis di PC, g-4 memberikan jarak renggang -->
+            <div class="row justify-content-center g-4">
+
+                <!-- KOLOM 1: Mengatur batas grid responsif -->
+                <div class="col-11 col-lg-5">
+                    <!-- Kotak abu-abu di dalam kolom -->
+                    <div class="testi-box h-100 mx-auto">
+                        <img src="images/6.jpg" class="avatar" alt="John Thor">
+                        <h3>John Thor</h3>
+                        <p>Setelah menggunakan jasa perusahaan ini, saya menjadi seorang super hero yang memiliki
+                            kekuatan
+                            untuk mengendalikan palu. Keren banget kan.</p>
+                    </div>
+                </div>
+
+                <!-- KOLOM 2: Mengatur batas grid responsif -->
+                <div class="col-11 col-lg-5">
+                    <!-- Kotak abu-abu di dalam kolom -->
+                    <div class="testi-box h-100 mx-auto">
+                        <img src="images/7.jpg" class="avatar" alt="Tony Stark">
+                        <h3>Tony Stark</h3>
+                        <p>Setelah saya kuliah di UMN, saya jadi jenius banget dan bisa bikin Iron Man. Saya jadi super
+                            hero
+                            paling tajir di jagad raya.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Bagian TUGAS: Newsletter -->
+        <div class="d-flex align-items-center flex-wrap">
+            <div id="newsletter">
+                <h2>Subscribe to our newsletter to get the latest info</h2>
+                <form>
+                    <input type="email" placeholder="Enter your email here..." required />
+                    <br>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer"
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-end">
+            <div class="company-info text-center text-md-start mb-4 mb-md-0">
+                <h4>PT. Tajir Mampus Corporation Inc.</h4>
+                <p>Dark Science Boulevard<br>
+                    Blok A1 No. 45<br>
+                    Gading Serpong, Tangerang
+                </p>
+                <br>
+                <p>Tel : (021) 123456789</p>
+            </div>
+            <div class="footer-right text-center text-md-end">
+                <div class="socials justify-content-center justify-content-md-end mb-2">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <img src="images/instagram.png" alt="Instagram">
+                    <img src="images/youtube.png" alt="Youtube">
+                </div>
+                <p>Copyright © 2022 | All rights reserved</p>
+            </div>
+        </div>
+        <!-- batas kontainer -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYs0g+0MhuP+ILRH9SENBOOLRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
