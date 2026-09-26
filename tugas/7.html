@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafik Kehadiran</title>
+    <style>
+        h4{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let monday = parseInt(window.prompt("Jumlah Mahasiswa yang Hadir(Senin)"), 10) || 0;
+        let tuesday = parseInt(window.prompt("Jumlah Mahasiswa yang Hadir(Selasa)"), 10) || 0;
+        let wednesday = parseInt(window.prompt("Jumlah Mahasiswa yang Hadir(Rabu)"), 10) || 0;
+        let thursday = parseInt(window.prompt("Jumlah Mahasiswa yang Hadir(Kamis)"), 10) || 0;
+        let friday = parseInt(window.prompt("Jumlah Mahasiswa yang Hadir(Jumat)"), 10) || 0;
+
+        document.write('<h4>Grafik Jumlah Kehadiran Mahasiswa</h4>')
+        document.write(`Senin: ${"x".repeat(monday)}<br>`);
+        document.write(`Selasa: ${"x".repeat(tuesday)}<br>`);
+        document.write(`Rabu: ${"x".repeat(wednesday)}<br>`);
+        document.write(`Kamis: ${"x".repeat(thursday)}<br>`);
+        document.write(`Jumat: ${"x".repeat(friday)}<br>`);
+    </script>
+</body>
+
+</html>

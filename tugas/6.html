@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Buat program yang akan meminta user menginput angka tertentu, kemudian program
+        //akan menampilkan bilangan prima dari 1 sampai dengan angka yang diinput oleh user.
+        let i = 3;
+        let x = 2;
+        bilangan = window.prompt("Masukkan Angka yang Diinginkan");
+        const list = [];
+        if(bilangan >= 2) list.push(2);
+        while(i != bilangan){
+            let prima = true;
+            let pembagiAkhir = Math.sqrt(i);
+            for(let x = 2; x <= pembagiAkhir; x++){
+                if(i % x == 0){
+                    prima = false;
+                    break;
+                }
+            }
+            if(prima){
+                list.push(i);
+            }
+            i++;
+        }
+        list.forEach(prima => {
+            document.write(prima + " ");
+        });
+    </script>
+</body>
+</html>

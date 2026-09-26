@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = true;
+        while (x) {
+            key = window.prompt("Luas atau keliling?");
+            panjang = window.prompt("panjang");
+            lebar = window.prompt("lebar");
+            if (key == "Luas" || key == "LUAS" || key == "luas") {
+                alert(hitungLuas(panjang, lebar));
+                x = false;
+            } else if (key == "keliling" || key == "KELILING" || key == "Keliling") {
+                alert(hitungKeliling(panjang, lebar));
+                x = false;
+            }
+
+            function hitungKeliling(panjang, lebar) {
+                total = panjang * 2 + lebar * 2
+                return total;
+            }
+
+            function hitungLuas(panjang, lebar) {
+                total = panjang * lebar
+                return total;
+            }
+        }
+    </script>
+</body>
+
+</html>

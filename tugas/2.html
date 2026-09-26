@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        jumlahMhs = window.prompt("Jumlah");
+        for (i = 1; i <= jumlahMhs; i++) {
+            nama = window.prompt('Nama');
+            uts = window.prompt('UTS');
+            uas = window.prompt('UAS');
+            tugas = window.prompt('Tugas');
+            Angka = parseInt(uts) * 0.3 + parseInt(uas) * 0.4 + parseInt(tugas) * 0.3;
+            if (Angka >= 85) {
+                grade = "A";
+            } else if (Angka >= 80) {
+                grade = "A-";
+            } else if (Angka >= 75) {
+                grade = "B+";
+            } else if (Angka >= 70) {
+                grade = "B";
+            } else if (Angka >= 65) {
+                grade = "B-";
+            } else if (Angka >= 60) {
+                grade = "C+";
+            } else if (Angka >= 55) {
+                grade = "C";
+            } else if (Angka >= 45) {
+                grade = "D";
+            } else {
+                grade = "E";
+            }
+
+            document.write("<br><br>" + i + ". " + nama + "<br>");
+            document.write("Tugas: " + tugas);
+            document.write("<br>UTS: " + uts);
+            document.write("<br>UAS: " + uas);
+            document.write("<br>Nilai Akhir: " + Angka);
+            document.write("<br>Grade: " + grade);
+        }
+    </script>
+</body>
+
+</html>
